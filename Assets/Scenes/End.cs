@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class End : MonoBehaviour {
 
+    //VAriable to let us add to the score
+    //Public so we can drag and drop
+    public Score scoreObject;
+
     //Designer Variables
     public string sceneToLoad;
 
@@ -26,6 +30,9 @@ public class End : MonoBehaviour {
         {
 
             // We DID hit the player!
+
+            //save the score using our score object reference 
+            scoreObject.SaveScore();
 
             // load next level
             SceneManager.LoadScene(sceneToLoad);
