@@ -1042,7 +1042,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 706074085}
   playerSprite: {fileID: 706074081}
   playerCollider: {fileID: 706074083}
-  livesObject: {fileID: 0}
+  livesObject: {fileID: 1541596774}
 --- !u!95 &706074085
 Animator:
   serializedVersion: 3
@@ -2339,15 +2339,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 31, y: -2, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 34, y: -2, z: 0}
     second:
       m_TileIndex: 8
@@ -2627,22 +2618,13 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 29, y: 2, z: 0}
-    second:
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 72
     m_Data: {fileID: 11400000, guid: 3580fe43188e1c44ea3dc85224e3010a, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: fb096aca5bafb4544a11198ae1c0fcf3, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 80eabf1ccf1631a488ffb4a450ded2ce, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -2675,7 +2657,7 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 74a6e95cef730184395d67a55ef90aff, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: 249c49c2c5aec28409664ef798ff2327, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -2697,14 +2679,14 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 276186396e4a77742a913f1b97813c84, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: 2bac9192a722f154eb7728907c4f322c, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 1f4e2133a75f13b418bf913d3e6e278a, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 50fc9ece1a2580f45a658a75bd3d2718, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 19f4a98c02831fa4cadfe29c8414dd72, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 123
+  - m_RefCount: 121
     m_Data:
       e00: 1
       e01: 0
@@ -2723,7 +2705,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 123
+  - m_RefCount: 121
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2886,7 +2868,7 @@ GameObject:
   - component: {fileID: 1541596770}
   - component: {fileID: 1541596773}
   - component: {fileID: 1541596772}
-  - component: {fileID: 1541596771}
+  - component: {fileID: 1541596774}
   m_Layer: 5
   m_Name: Lives Text
   m_TagString: Untagged
@@ -2912,18 +2894,6 @@ RectTransform:
   m_AnchoredPosition: {x: 410, y: 194.2}
   m_SizeDelta: {x: 160, y: 30.003}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1541596771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1541596769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67a46cd92eb347d46874aae8a3e8443c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1541596772}
 --- !u!114 &1541596772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,6 +2934,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541596769}
   m_CullTransparentMesh: 0
+--- !u!114 &1541596774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541596769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56377598543c7c64ab9a717cd3e5a719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  livesText: {fileID: 1541596772}
 --- !u!1 &1545521850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,7 +2956,6 @@ GameObject:
   - component: {fileID: 1545521852}
   - component: {fileID: 1545521851}
   - component: {fileID: 1545521854}
-  - component: {fileID: 1545521853}
   - component: {fileID: 1545521855}
   m_Layer: 0
   m_Name: coinGold (3)
@@ -3042,19 +3023,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1545521853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1545521850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f56b574606519fd4aa27f630e0c8d9cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreObject: {fileID: 0}
-  coinValue: 0
 --- !u!114 &1545521854
 MonoBehaviour:
   m_ObjectHideFlags: 0
